@@ -6,7 +6,7 @@ const ExpenseSchema = new Schema({
   description: { type: String, required: true },
   category:    { type: String, required: true },
   date:        { type: Date, default: Date.now },
-  createdAt:   { type: Date, default: Date.now }, // TTL index runs on this
-}, { timestamps: false });
+  createdAt:   { type: Date, default: Date.now },
+});
 
 export default mongoose.model("Expense", ExpenseSchema);
